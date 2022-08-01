@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.2/chart.js" integrity="sha512-/MqITtqQfmjLnDtBC8yxrsERbn3dvqyxtc1B/3x57xp+J3srVBcgyr9VXgDj8BYScxSJ9MauIMY7F9Fr2TJHkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="/css/styles.css"> 
+    <link rel="stylesheet" href="/css/currencystyle.css"> 
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+    <!-- For Gold -->
+    <script type="text/javascript" src="https://www.bullionvault.com/banners/live_price_widget.js"></script>
+    <!--   -->
+    <title>Currency Exchange</title>
+    <!--   -->
+</head>
+
+<body>
+
+<!-- Welcome to First Start of Code -->
+  <div class="circle">
+    <center>
+      <i><img class id="img"
+      src=" https://img.freepik.com/premium-photo/blockchain-market-usd-currency-concept-with-blue-glowing-digital-dollar-symbol-abstract-technological-backdrop-with-world-map-waving-lines-3d-rendering_670147-524.jpg?size=626&ext=jpg" width="50%" height="250" alt="LOGOWEB">
+      </i>
+    </center>
+  </div>
+    <section  id="Start">
+    <center>
+      <h1 style="font-size: 40px; padding:40px;"><b><u>Welcome To Currency Converter</u></b></h1>
+      <h1>Real-Time, Accurate & Reliable Data for Crypto and Country Currencies over 170+ World<br>according to US DOLLAR CURRENCY</h1>
+    <h3 style="padding:40px;"> <u>Lastly Updated</u> Date-Time-year: <span id="time"> </span></h3>
+<script src="/js/js/time.js"></script>
+</center>
+    </section>
+<!-- end of showing the welcome page -->
+
+<!-- Currency Converter application according to countries currenceis -->
+
+<body style="padding-top: 50px;">
+<section id="section">
+    <div class="wrapper">
+      <header>Currency Converter</header>
+      <form action="#">
+        <div class="amount">
+          <p>Enter Amount</p>
+          <input type="text" value="1">
+        </div>
+
+        <div class="drop-list">
+          <div class="from">
+            <p>From</p>
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+              <select> <!-- Options tags are used from JavaScript --> </select>
+            </div>
+          </div>
+          <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+          <div class="to">
+            <p>To</p>
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+              <select> <!-- Options tag are inserted from JavaScript --> </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="exchange-rate">Getting exchange rate...</div>
+        <button>Get Exchange Rate</button>
+      </form>
+    </div>
+
+    <script src="js/country-list.js"></script>
+    <script src="js/js/script.js"></script>
+
+  </section>
+</body>
+
+<!-- END OF THE CURRENCY CONVERTER ACCORDING TO COUNTREIS -->
+
+<!-- Showing the table and maps for more knowledge  -->
+
+<section style="background-color: #889; padding-top: 50px;">
+    <div class="TableCurrency">
+      <center>
+        <h1 style="color:black ;">Table of the most Popular Countries that held <u>Power</u></h1></center><br><h2>
+          Fore more information and knowldege follow the
+          <a href="https://www.cia.gov/the-world-factbook/countries/" target="_blank">link<small>
+          </small></a>
+        </h2>
+  
+          <ul class="responsive-table" style="padding-bottom: 21px;">
+            <li class="table-header">
+                <div class="col col-1">Country</div><br>
+                <div class="col col-2">Currency Name</div><br>
+                <div class="col col-3">Code A</div><br>      
+                <div class="col col-4">Country Map</div><br>
+            </li>
+            
+            <li class="table-row">
+                <div class="col col-1" data-label="Country"><a href="https://www.cia.gov/the-world-factbook/static/730303882b8328fe4445b5d82cb93151/04372/US-flag.jpg"><img class id="img" src="https://www.cia.gov/the-world-factbook/static/730303882b8328fe4445b5d82cb93151/04372/US-flag.jpg" width="80" height="50"></a></div>
+                <div class="col col-2" data-label="Currency Name">	US Dollar </div>
+                <div class="col col-3" data-label="Amount">US</div>
+                <div class="col col-4" data-label="Country Map"><a href="https://www.cia.gov/the-world-factbook/static/f3a248d0fc7e56579d1f75ba68c50d9c/2f1b1/US-map.jpg"><img class id="img" src="https://www.cia.gov/the-world-factbook/static/f3a248d0fc7e56579d1f75ba68c50d9c/2f1b1/US-map.jpg" width="80" height="50"></a></div>
+            </li>
+        
+            <li class="table-row">
+                <div class="col col-1" data-label="Country"><a href="https://www.cia.gov/the-world-factbook/static/4549ff777349bed95a24ddd29a1b0493/f0719/CA-flag.jpg"><img class id="img" src="https://www.cia.gov/the-world-factbook/static/4549ff777349bed95a24ddd29a1b0493/f0719/CA-flag.jpg"width="80"height="50"></a></div>
+                <div class="col col-2" data-label="Currency Name">Canadian Dollar</div>
+                <div class="col col-3" data-label="Amount">CAD</div>
+                <div class="col col-4" data-label="Country Map"><a href="https://www.cia.gov/the-world-factbook/static/9ec5ab9f09cbf4d85d29a7f935d1ed4e/4c1f1/CA-map.jpg"><img class id="img" src="https://www.cia.gov/the-world-factbook/static/9ec5ab9f09cbf4d85d29a7f935d1ed4e/4c1f1/CA-map.jpg" width="80" height="50"></a></div>
+            </li>
+        
+            <li class="table-row">
+                <div class="col col-1" data-label="Country"><a href="https://www.cia.gov/the-world-factbook/static/407aa941afe4e729c1772f81e0e7da3d/25252/CH-flag.jpg"><a href="https://www.cia.gov/the-world-factbook/static/407aa941afe4e729c1772f81e0e7da3d/25252/CH-flag.jpg"><img class id="img" src="https://www.cia.gov/the-world-factbook/static/407aa941afe4e729c1772f81e0e7da3d/25252/CH-flag.jpg"weight="80" height="50"></a></div>
+                <div class="col col-2" data-label="Currency Name">Renminbi (Yuan)</div>
+                <div class="col col-3" data-label="Amount">CNY</div>
+                <div class="col col-4" data-label="Country Map"><a href="https://www.cia.gov/the-world-factbook/static/6e1950aa6584fce40c4349744aa3ca26/9eab2/CH-map.jpg"><img class id="img" src="https://www.cia.gov/the-world-factbook/static/6e1950aa6584fce40c4349744aa3ca26/9eab2/CH-map.jpg"width="80" height="50"></a></div>
+            </li>
+        
+            <li class="table-row">
+                <div class="col col-1" data-label="Country"><a href="https://www.cia.gov/the-world-factbook/static/110531ff52589564ce31442c67469be4/b11e6/EE-flag.jpg"><img class id="img" src="https://www.cia.gov/the-world-factbook/static/110531ff52589564ce31442c67469be4/b11e6/EE-flag.jpg"weight="50" height="50"></a></div>
+                <div class="col col-2" data-label="Currency Name">EURO</div>
+                <div class="col col-3" data-label="Amount">EUR</div>
+                <div class="col col-4" data-label="Country Map"><a href="https://www.cia.gov/the-world-factbook/static/5cd2c829838f7546fc95a27e47f44e99/94b52/EE-map.jpg"><img class id="img" src="https://www.cia.gov/the-world-factbook/static/5cd2c829838f7546fc95a27e47f44e99/94b52/EE-map.jpg"width="80" height="50"></a></div>
+            </li>
+          </ul>
+        
+        </div>
+</section>
+
+<!-- End of the PoPULAR Contries according to the table  -->
+
+<!-- Showing the Market Cap accroding to Crypto Currencies -->
+
+<section style="background-color: whitesmoke;">
+<center>
+<h1 style="padding-top: 60px; color: rgba(255, 99, 132, 0.6);"><u>Line Chart Showing Market Cap ($billions) for Crypto</u></h1>
+</center>
+<center>
+<div class="container"> 
+  <canvas id="myChart" width="450" height="200"></canvas>
+</div>
+
+<script id="Chart">
+   // UPDATING THE CHART
+   const ctx = document.getElementById('myChart').getContext('2d');
+    function addData(myChart, label, data) {
+    chart.data.labels.push(label);
+    chart.data.datasets.forEach((dataset) => {
+      dataset.data.push(data);
+    });
+    chart.update();
+}
+function removeData(myChart) {
+    chart.data.labels.pop();
+    chart.data.datasets.forEach((dataset) => {
+    dataset.data.pop();
+    });
+    chart.update();
+}
+  // THE CHART
+  const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['','Bitcoin', 'Ethereum (ETH)', 'Tether (USDT)', 'U.S. Dollar Coin (USDC)', 'Binance Coin (BNB)', 'Binance USD (BUSD)'],
+        datasets: [{
+            label: '#Crypto Currencies for a Market Cap',
+            data: [
+            900,375, 128, 66, 55, 35, 17
+            ],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            tension: 0.7,
+            borderWidth: 1,
+            borderColor:'#777',
+            hoverBoderWidth:3,
+            hoverBorderColor:'#000'
+        }],
+    },
+    options: {
+      legend:{
+        display:true,
+        position:'right',
+        labels:{
+          fontColor:'#000'
+        }
+      },
+      layout:{
+        padding:{
+          left:50,
+          right:0,
+          bottom:0,
+          top:0
+        }
+      },
+      scales: {
+            y: {
+              beginAtZero: true,
+              title:'billions',
+            },
+            x:{
+              beginAtZero: true,
+              min:0
+            }
+        }  
+    }
+});
+</script>
+</center>
+</section>
+
+<!-- End of the Market Cap!!! -->
+
+<!-- Crypto Currencies Chart showing UP/DOWN -->
+
+<section style="padding-top: 50px;">
+<center>
+  <h1 style="color: blue; padding-bottom: 10px;"> The values of most used Crypto Currencies</h1>
+  </center>
+  <center>
+  <container class="container" style=" padding-bottom: 10px;">
+    <cards class="cards">
+        <bitcoin style="width: 30%" class="btc">
+            <card class="asset-info">
+                <div class="title">
+                    <img src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/btc.svg" width="15%"> 
+                    <h1>Bitcoin</h1>
+                </div>
+                <div class="details">
+                    <h2 class="asset-price" id="btcPrice"></h2>
+                </div>
+            </card>
+            <canvas id="btcChart"></canvas>
+        </bitcoin>
+        <ethereum style="width: 30%" class="ethereum">
+          <card class="asset-info">
+              <div class="title">
+                  <img src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/eth.svg" width="10%"> 
+                  <h1>Ethereum</h1>
+              </div>
+              <div class="details">
+                  <h2 class="asset-price" id="ethPrice"></h2>
+              </div>
+          </card>
+          <canvas id="ethereumChart"></canvas>
+      </ethereum>
+
+        <cosmos style="width: 30%" class="cosmos">
+            <card class="asset-info">
+                <div class="title">
+                    <img src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/atm.svg" width="15%"> 
+                    <h1>Cosmos</h1>
+                </div>
+                <div class="details">
+                    <h2 class="asset-price" id="atomPrice"></h2>
+                </div>
+            </card>
+            <canvas id="cosmosChart"></canvas>
+        </cosmos>
+
+        
+    </cards>
+    <script src="/js/js/currencies.js"></script>
+  </container>
+  </center>
+</section>
+
+
+<!-- End of Crypto Chart -->
+
+<!-- Showing the price of Gold according to Currencies  -->
+
+<section style="padding-top: 50px;">
+<CENTER>
+  <p style="padding-top: 90px;"><u style="color: red;"><b style="color: red;">BY & SELL</b></u></p>
+  <h1> Values of <b style="color: gold;"><u>Gold</u></b>, <b style="color: silver;"><u>Silver</u></b>, and <b style="color: silver;"><u>Platinum</u></b> </h1><br>
+  <h1 style="padding-top: 50px;">Currencies offered BY:<b style="color: red;"> USD</b> <b style="color: rgb(255, 123, 0);">GBP</b> <b style="color: blue;">EURO</b></h1>
+	<div id="banner1"></div>
+	<script type="text/javascript">
+		var options = {
+			referrerID: "JOHNSMITH101",
+			size: "728x90",
+			bullion: "gold",
+			currency: "EUR",
+			weightUnit: "TOZ"
+		};
+		new BullionVaultPriceWidget('banner1', options);
+	</script>
+</CENTER>
+</section>
+
+<!-- End of the table -->
+
+<!-- Span for Social media before ending -->
+
+<section style="padding-top: 90px; padding-bottom: 100px;">
+  <h2 style="padding-top: 68px; color:darkturquoise;"><u style="color: darkturquoise;">@walidkinaan</u></h2>
+<span>
+<div class="row social" align="center">
+  <a target = "blank" href = 'https://www.twitch.tv/settings/profile'><i class="fab fa-twitch"></i></a>
+  <a target = "blank" href = 'https://www.youtube.com/channel/UCkXeMbNBV2rEuMtbeEMNtbA'><i class="fab fa-youtube"></i></a>
+  <a target = "blank" href='https://www.facebook.com/walid.kinaan.50/'><i class='fab fa-facebook'></i></a>
+  <a target = "blank" href='https://www.instagram.com/_walid_kinaan_/'><i class='fab fa-instagram'></i></a>
+  <a target="blank" href="https://social.tchncs.de/web/@walidkinaan"><i class="fab fa-mastodon"></i></a>
+  <a target="blank" href="https://discord.com/channels/@me"> <i class="fab fa-discord"></i></a>
+</div>
+
+<footer class = "footer-class">
+  
+ <p style="font-size: 18px; padding: 5px;">
+  Used Programming language <p style="color: red;font-size: 18px;padding: 5px;">HTML<p> <p style="color: rgb(214, 214, 21);font-size: 18px;padding: 5px;">JavaScript</p>
+  <p style="color: blue;font-size: 18px;padding: 5px;">CSS</p>
+</p>
+ 
+ </footer>
+</span>
+</section>
+</body>
+<!-- End of all Codes -->
+</html>
+
+<!--                                   HAPPY CODING SIR.                                   -->
