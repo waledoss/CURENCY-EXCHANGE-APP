@@ -75,3 +75,5 @@ function removeData(myChart) {
         }  
     }
 });
+updatemyChart()
+printmyChart()
